@@ -1,0 +1,7 @@
+Parte 2
+Para obtener el valor "El Padrino":
+echo $peliculasGeneros[0]['pelicula']; 
+ Para obtener el valor "Titanic":
+echo $peliculasGeneros[3]['pelicula'];
+Para obtener el valor 4
+echo $peliculasGeneros[3]['id'];
