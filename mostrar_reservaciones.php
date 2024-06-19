@@ -33,6 +33,6 @@
     }
     ?>
     <br><br>
-    <a href="index.html">Hacer otra reservación</a>
+    <a href="index.htm">Hacer otra reservación</a>
 </body>
 </html>
