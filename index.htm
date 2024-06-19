@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservación de Hotel</title>
+</head>
+<body>
+    <h1>Reservación de Hotel</h1>
+    <form action="procesar_reservacion.php" method="post">
+        <label for="hotel">Seleccione el Hotel:</label><br>
+        <select id="hotel" name="hotel" required>
+            <option value="Hotel Sol">Hotel Issa</option>
+            <option value="Hotel Luna">Hotel Cherry</option>
+            <option value="Hotel Estrella">Hotel More life</option>
+            <option value="Hotel Mar">Hotel Mar</option>
+            <option value="Hotel Montaña">Hotel Wolf</option>
+        </select><br><br>
+        
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido" required><br><br>
+        
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono" required><br><br>
+        
+        <label for="fecha_reservacion">Fecha de Reservación:</label><br>
+        <input type="date" id="fecha_reservacion" name="fecha_reservacion" required><br><br>
+        
+        <label for="observaciones">Observaciones:</label><br>
+        <textarea id="observaciones" name="observaciones"></textarea><br><br>
+        
+        <button type="submit">Procesar</button>
+    </form>
+</body>
+</html>
