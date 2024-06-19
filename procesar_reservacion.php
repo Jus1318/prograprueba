@@ -13,8 +13,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Todos los campos son requeridos.");
     }
 
-    if (!preg_match("/^[0-9]{10}$/", $telefono)) {
-        die("Teléfono no válido. Debe contener 10 dígitos.");
+    if (!preg_match("/^[0-9]{8}$/", $telefono)) {
+        die("Teléfono no válido. Debe contener 8 dígitos.");
     }
 
     // Guardar datos en un archivo plano
@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     file_put_contents("reservations.txt", $data, FILE_APPEND);
 
     // Redireccionar a mostrar las reservaciones
-    header("Location: show_reservations.php");
+    header("Location: mostrar_reservaciones.php");
     exit();
 } else {
     die("Método de solicitud no válido.");
